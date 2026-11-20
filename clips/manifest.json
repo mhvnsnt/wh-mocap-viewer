@@ -1,0 +1,123 @@
+{
+  "format": "wh-mocap-manifest/1",
+  "pairFrame": "thrower base (0,0,0) facing +X; victim base (+1.0,0,0) facing -X; Y up, ground y=0",
+  "fighters": [
+    "king"
+  ],
+  "moves": [
+    {
+      "id": "1plus3-winding-nut",
+      "move": "1+3",
+      "name": "WINDING NUT",
+      "games": {
+        "T3": {
+          "thrower": {
+            "file": "clips/t3-1plus3-winding-nut-thrower.json",
+            "sourceClip": "0xaeb",
+            "slot": 2795,
+            "moveRow": 415,
+            "srcFps": 30,
+            "srcFrames": 66,
+            "streamFrames": 131,
+            "maxTorsoPitchDeg": 104.8,
+            "maxTorsoPitchF": 26
+          },
+          "victim": {
+            "file": "clips/t3-1plus3-winding-nut-victim.json",
+            "sourceClip": "0xbca",
+            "slot": 3018,
+            "moveRow": 416,
+            "srcFps": 30,
+            "srcFrames": 65,
+            "streamFrames": 130,
+            "maxTorsoPitchDeg": 172.6,
+            "maxTorsoPitchF": 30
+          }
+        },
+        "T7": {
+          "thrower": {
+            "file": "clips/t7-1plus3-winding-nut-thrower.json",
+            "sourceClip": "common_709",
+            "slot": null,
+            "moveRow": null,
+            "srcFps": 60,
+            "srcFrames": 40,
+            "streamFrames": null,
+            "maxTorsoPitchDeg": 40.9,
+            "maxTorsoPitchF": 20
+          },
+          "victim": {
+            "file": "clips/t7-1plus3-winding-nut-victim.json",
+            "sourceClip": "rotsm_574",
+            "slot": null,
+            "moveRow": null,
+            "srcFps": 60,
+            "srcFrames": 130,
+            "streamFrames": null,
+            "maxTorsoPitchDeg": 116.3,
+            "maxTorsoPitchF": 54
+          }
+        }
+      },
+      "outFrames": 131,
+      "fps": 60
+    },
+    {
+      "id": "2plus4-suplex",
+      "move": "2+4",
+      "name": "SUPLEX",
+      "games": {
+        "T3": {
+          "thrower": {
+            "file": "clips/t3-2plus4-suplex-thrower.json",
+            "sourceClip": "0xaed",
+            "slot": 2797,
+            "moveRow": 417,
+            "srcFps": 30,
+            "srcFrames": 54,
+            "streamFrames": 108,
+            "maxTorsoPitchDeg": 88.8,
+            "maxTorsoPitchF": 32
+          },
+          "victim": {
+            "file": "clips/t3-2plus4-suplex-victim.json",
+            "sourceClip": "0xbeb",
+            "slot": 3051,
+            "moveRow": 418,
+            "srcFps": 30,
+            "srcFrames": 52,
+            "streamFrames": 103,
+            "maxTorsoPitchDeg": 172.1,
+            "maxTorsoPitchF": 25
+          }
+        },
+        "T7": {
+          "thrower": {
+            "file": "clips/t7-2plus4-suplex-thrower.json",
+            "sourceClip": "rotsm_534",
+            "slot": null,
+            "moveRow": null,
+            "srcFps": 60,
+            "srcFrames": 40,
+            "streamFrames": null,
+            "maxTorsoPitchDeg": 37.7,
+            "maxTorsoPitchF": 18
+          },
+          "victim": {
+            "file": "clips/t7-2plus4-suplex-victim.json",
+            "sourceClip": "rotsm_578",
+            "slot": null,
+            "moveRow": null,
+            "srcFps": 60,
+            "srcFrames": 138,
+            "streamFrames": null,
+            "maxTorsoPitchDeg": 108.6,
+            "maxTorsoPitchF": 76
+          }
+        }
+      },
+      "outFrames": 138,
+      "fps": 60
+    }
+  ]
+}
