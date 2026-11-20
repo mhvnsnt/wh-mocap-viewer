@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WH Mocap Viewer — King throws, T3 vs T7</title>
+<link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>WH Mocap Viewer</h1>
+    <div class="sub">King throw animations — Tekken 3 vs Tekken 7, skeleton visualization of the real clip data (not game renders). Thrower cyan, victim orange.</div>
+    <div id="status" role="status"></div>
+  </header>
+
+  <div id="controls">
+    <button id="playBtn" type="button" aria-pressed="false">▶ Play</button>
+    <input id="scrub" type="range" min="0" max="0" value="0" step="1" aria-label="Scrub timeline">
+    <label>Speed <input id="speed" type="range" min="0.25" max="2" step="0.25" value="1" aria-label="Playback speed"> <span id="speedVal">1.00×</span></label>
+    <select id="clipSel" aria-label="Clip selector"></select>
+    <button id="viewT3" type="button" aria-pressed="false">T3</button>
+    <button id="viewT7" type="button" aria-pressed="false">T7</button>
+    <button id="viewBoth" type="button" aria-pressed="true">T3 + T7</button>
+  </div>
+
+  <div id="panels">
+    <section class="panel" data-game="T3">
+      <div class="title">T3</div>
+      <div class="meta"></div>
+      <canvas></canvas>
+      <div class="foot"></div>
+    </section>
+    <section class="panel" data-game="T7">
+      <div class="title">T7</div>
+      <div class="meta"></div>
+      <canvas></canvas>
+      <div class="foot"></div>
+    </section>
+  </div>
+
+  <footer id="about">
+    Data: FK'd world joint positions from the real source clips (T3 king-pack rows, T7
+    wh-anim/1 clips), normalized into one pair frame — thrower base (0,0,0) facing +X,
+    victim base (+1.0,0,0) facing −X. Camera: fixed orthographic 3/4 view (azimuth 32°,
+    elevation 14°), per-frame follow center, fixed scale per clip pair. Ended clips hold
+    their last frame (HELD). T7 victim clips include a get-up tail — the recovery at the
+    end is not part of the throw. See README.md for the clip format.
+  </footer>
+</div>
+<script src="viewer.js"></script>
+</body>
+</html>
