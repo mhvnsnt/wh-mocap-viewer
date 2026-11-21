@@ -213,7 +213,7 @@ for (const game of ['T3', 'T7']) {
 }
 
 function fmtFact(v) {
-  const p = v.diag.maxTorsoPitchDeg;
+  const p = v.maxTorsoPitchDeg;
   if (p >= 160) return `victim max torso pitch ${p.toFixed(0)}° — FULLY INVERTED (spinning spiral)`;
   if (p >= 100) return `victim max torso pitch ${p.toFixed(0)}° — past horizontal, not inverted`;
   return `victim max torso pitch ${p.toFixed(0)}°`;
